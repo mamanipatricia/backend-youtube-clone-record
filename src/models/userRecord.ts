@@ -9,7 +9,7 @@ interface UserRecord {
 }
 
 // 2. Create a Schema corresponding to the document interface.
-const UserSchema = new Schema<UserRecord>(
+const UserRecordSchema = new Schema<UserRecord>(
   {
     action: {
       type: String,
@@ -30,6 +30,6 @@ const UserSchema = new Schema<UserRecord>(
 )
 
 // 3. Create a Model.
-const UserRecordModel = model<UserRecord>("UserRecord", UserSchema)
+const UserRecordModel = model<UserRecord>("UserRecord", UserRecordSchema)
 
 export default UserRecordModel

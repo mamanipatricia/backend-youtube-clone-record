@@ -1,6 +1,7 @@
-import UserModel from "../models/user"
+import UserModel, {User} from "../models/user"
 import {NextFunction, Request, Response} from "express"
 import {ResponseFormat} from "../utils/ResponseFormat"
+import {UserBodyPayload} from "../types/user"
 
 export class UserController {
   public async list(
@@ -9,7 +10,7 @@ export class UserController {
     next: NextFunction,
   ): Promise<Response | void> {
     try {
-      console.log("***", req.ip)
+      console.log("===>", req.ip)
       console.log(req.ips)
       console.log(req.socket.remoteAddress)
       const user = await UserModel.find()
@@ -40,7 +41,7 @@ export class UserController {
     }
   }
 
-  private async getUserBy(params: any): Promise<any> {
+  private async getUserBy(params: UserBodyPayload): Promise<User | null> {
     return await UserModel.findOne(params)
   }
 }

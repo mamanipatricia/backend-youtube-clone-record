@@ -1,7 +1,7 @@
-import {Schema, model} from "mongoose"
+import {Schema, model, Document} from "mongoose"
 
 // 1. Create an interface representing a document in MongoDB.
-interface User {
+export interface User extends Document {
   name: string
   email: string
 }

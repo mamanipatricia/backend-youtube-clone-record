@@ -4,9 +4,9 @@ A Node.js project using Typescript and Express.js
 
 ## System Requirements
 
-- [git](https://git-scm.com/) v2.13 or greater
+- [Git](https://git-scm.com/) v2.13 or greater
 - [NodeJS](https://nodejs.org) `12 || 14 || 15 || 16`
-- [npm](https://www.npmjs.com/) v6 or greater
+- [Npm](https://www.npmjs.com/) v6 or greater
 - [MongoDB](https://www.mongodb.com/) v4.0 or greater
 
 All of these must be available in your `PATH`. To verify things are set up

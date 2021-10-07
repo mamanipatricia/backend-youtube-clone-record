@@ -1,10 +1,75 @@
-# Typescript Nodejs
+# YouTube clone Backend
 
-A Node.js project template using Typescript
+A Node.js project using Typescript and Express.js
+
+## System Requirements
+
+- [git][git] v2.13 or greater
+- [NodeJS][node] `12 || 14 || 15 || 16`
+- [npm][npm] v6 or greater
+- [MongoDB][mongodb] v4.0 or greater
+
+All of these must be available in your `PATH`. To verify things are set up
+properly, you can run this:
+
+```shell
+git --version
+node --version
+npm --version
+```
+
+## Steps to run the project
+
+1. Clone the project
+2. Install packages
+
+   ```shell=
+   $ npm i
+   ```
+
+3. Configure environment variables
+
+```shell
+$ cp .env.example .env
+```
+
+4. Configure the Database
+   Run MongoDB locally or configure on [Mongo Atlas](https://cloud.mongodb.com/atlas)
+
+> Please, be sure to update correctly the environment variables in created `.env` file.
+
+5. Run the project
+
+```shell=
+$ npm run dev
+```
+
+## Build the project
+
+```shell=
+$ npm run build
+```
+
+## Deploy the project
+
+This project is deployed on AWS.
+The services used are:
+
+- EC2
+- VPC
+- Route53
+
+The diagram of the backend Infrastructure [is here](https://slides.com/d/Z1OkMFM/live).
+
+Once the Infrastructure is created, you can run this [script](https://gist.github.com/mamanipatricia/87dae38b7d645364d91fb27b75188406) as a superuser `sudo su` to deploy the project automatically.
+
+**PS:**
+
+- I suggest you to create an Ubuntu Image or any Linux Distribution for your EC2 instance.
 
 ## Available Scripts
 
-Below is a list of all the scripts this template has available:
+Below is a list of all the scripts this project has available:
 | Npm Script | Description |
 | ------------------------- | ------------------------------------------------------------------------------------------------- |
 | `build-ts` | Compiles all source `.ts` files to `.js` files in the `dist` folder |

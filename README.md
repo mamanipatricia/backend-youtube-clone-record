@@ -4,10 +4,10 @@ A Node.js project using Typescript and Express.js
 
 ## System Requirements
 
-- [git][git] v2.13 or greater
-- [NodeJS][node] `12 || 14 || 15 || 16`
-- [npm][npm] v6 or greater
-- [MongoDB][mongodb] v4.0 or greater
+- [git](https://git-scm.com/) v2.13 or greater
+- [NodeJS](https://nodejs.org) `12 || 14 || 15 || 16`
+- [npm](https://www.npmjs.com/) v6 or greater
+- [MongoDB](https://www.mongodb.com/) v4.0 or greater
 
 All of these must be available in your `PATH`. To verify things are set up
 properly, you can run this:
@@ -34,7 +34,7 @@ $ cp .env.example .env
 ```
 
 4. Configure the Database
-   Run MongoDB locally or configure on [Mongo Atlas](https://cloud.mongodb.com/atlas)
+   Run MongoDB locally or configure on [Mongo Atlas](https://www.mongodb.com/en/cloud/atlas)
 
 > Please, be sure to update correctly the environment variables in created `.env` file.
 

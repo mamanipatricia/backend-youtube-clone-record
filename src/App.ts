@@ -17,6 +17,7 @@ app.set("trust proxy", true)
 // connect to MongoDB
 mongodb
 
+// here starts the server configuration*
 app
   .use(cors())
   .use(logger("dev"))
